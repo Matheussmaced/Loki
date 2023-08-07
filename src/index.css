@@ -33,7 +33,7 @@ p{
 }
 #informsBody{
   display: flex;
-  grid-gap: 73px;
+  grid-gap: 7%;
   margin-top: 121px;
 }
 #avaliacoes{
@@ -41,13 +41,14 @@ p{
   align-items: center;
   margin-top: 45px;
 }
-button{
+#star1, #star2, #star3, #star4, #star5{
   background-color: transparent;
   border: none;
   cursor: pointer;
   transition: transform .8s ease;
+  margin-left: 1.2%;
 }
-button:hover{
+.stars:hover{
   transform: scale(1.1);
   background-image: url(./assets/img/starFull.png);
   transition: .8s;
@@ -55,11 +56,125 @@ button:hover{
 h4{
   color: #fff;
   font-size: 24px;
-  margin-left: 12px;
+  margin-left: 1.5%;
 }
 #star1{
-  margin-left: 104px;
+  margin-left: 13.2%;
 }
 #date{
-  margin-left: 104px;
+  margin-left: 13.2%;
+}
+#assistir{
+  background-color: #0072D2;
+}
+
+#assistir{
+  margin-top: 44px;
+  margin-right: 21px;
+  padding: 15px 27px;
+  border-radius: 3px;
+  border: none;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+  transition: transform 1s ease;
+}
+#assistir:hover{
+  transform: scale(1.1);
+  transition: 1s;
+}
+#trailer{
+  font-size: 16px;
+  background-color: #131318;
+  border: 1px solid #fff;
+  padding: 15px 25px;
+  border-radius: 3px;
+  color: #fff;
+  cursor: pointer;
+  transition: transform 1s ease;
+}
+#trailer:hover{
+  transform: scale(1.1);
+  transition: 1s;
+}
+
+@media(max-width: 800px){
+  body{
+    background-image: url(./assets/img/mobile_background.png);
+    background-size: 100%;
+  }
+  #informsBody{
+    position: relative;
+    top: 293px;
+  }
+  #informs{
+    width: 90%;
+    margin: auto;
+  }
+  p{
+    font-size: 14px;
+  }
+  #paragrafo{
+    position: absolute;
+    top: 120px;
+    left: 0;
+  }
+  #avaliacoes{
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 90%;
+    justify-content: space-around;
+    bottom: 50px;
+  }
+  #capa{
+    display: none;
+  }
+  #assistir{
+    padding: 8px 16px;
+    font-size: 14px;
+  }
+  #trailer{
+    padding: 8px 16px;
+    width: 150px;
+    font-size: 14px;
+  }
+  #buttons {
+    position: absolute;
+    top: -5px;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 20px; /* Ajuste conforme necessário para a posição vertical */
+    width: 100%;
+    text-align: center; /* Centraliza o conteúdo dos botões */
+  }
+  #background{
+    border-radius: 20px 20px 0px 0px;
+    background-color: #131318;
+    height: 250px;
+    margin-top: 310px;
+  }
+
+  #clock{
+    width: 18px;
+  }
+  h4{
+    font-size: 16px;
+  }
+  .starImg{
+    width: 20px;
+  }
+
+  #traco{
+    height: 1px;
+    margin-top: 24px;
+    background-color: rgba(196, 196, 196, 0.08);
+  }
+}
+
+/*js*/
+
+.starFull{
+  background-image: url(./assets/img/starFull.png) !important;
 }
