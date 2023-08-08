@@ -1,7 +1,6 @@
 import Capa from '../img/capa.png'
 import Clock from '../img/clock.png'
 import Stars from '../img/star.png'
-import {Link} from 'react-router-dom'
 import {useState} from 'react'
 const Body = () =>{
 
