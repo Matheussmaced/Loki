@@ -97,6 +97,11 @@ h4{
   transform: scale(1.1);
   transition: 1s;
 }
+/*js*/
+
+.starFull{
+  background-image: url(./assets/img/starFull.png) !important;
+}
 
 @media(max-width: 800px){
   body{
@@ -171,10 +176,17 @@ h4{
     margin-top: 24px;
     background-color: rgba(196, 196, 196, 0.08);
   }
+  .starFull{
+    width: 20px;
+    background-size: 100%;
+  }
+  .stars:hover{
+    transform: none;
+    background-image: none;
+    background-size: none;
+    transition: none;
+    width: none;
+  }
 }
 
-/*js*/
 
-.starFull{
-  background-image: url(./assets/img/starFull.png) !important;
-}

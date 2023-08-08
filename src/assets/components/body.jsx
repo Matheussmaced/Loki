@@ -14,6 +14,10 @@ const Body = () =>{
     const click1Star = () => {
         if(classStar1 === 'starFull'){
             setClassStar1('classeInicial')
+            setClassStar2('classeInicial')
+            setClassStar3('classeInicial')
+            setClassStar4('classeInicial')
+            setClassStar5('classeInicial')
         }else{
             setClassStar1('starFull')
         }
@@ -21,33 +25,59 @@ const Body = () =>{
 
     const click2Star = () => {
         if(classStar2 === 'starFull'){
+            setClassStar1('classeInicial')
             setClassStar2('classeInicial')
+            setClassStar3('classeInicial')
+            setClassStar4('classeInicial')
+            setClassStar5('classeInicial')
         }else{
             setClassStar2('starFull')
+            setClassStar1('starFull')
         }
     }
 
     const click3Star = () => {
         if(classStar3 === 'starFull'){
+            setClassStar1('classeInicial')
+            setClassStar2('classeInicial')
             setClassStar3('classeInicial')
+            setClassStar4('classeInicial')
+            setClassStar5('classeInicial')
         }else{
             setClassStar3('starFull')
+            setClassStar2('starFull')
+            setClassStar1('starFull')
         }
     }
 
     const click4Star = () => {
         if(classStar4 === 'starFull'){
+            setClassStar1('classeInicial')
+            setClassStar2('classeInicial')
+            setClassStar3('classeInicial')
             setClassStar4('classeInicial')
+            setClassStar5('classeInicial')
         }else{
             setClassStar4('starFull')
+            setClassStar3('starFull')
+            setClassStar2('starFull')
+            setClassStar1('starFull')
         }
     }
 
     const click5Star = () => {
         if(classStar5 === 'starFull'){
+            setClassStar1('classeInicial')
+            setClassStar2('classeInicial')
+            setClassStar3('classeInicial')
+            setClassStar4('classeInicial')
             setClassStar5('classeInicial')
         }else{
             setClassStar5('starFull')
+            setClassStar4('starFull')
+            setClassStar3('starFull')
+            setClassStar2('starFull')
+            setClassStar1('starFull')
         }
     }
 
